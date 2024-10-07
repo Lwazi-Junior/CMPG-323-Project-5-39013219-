@@ -1,46 +1,80 @@
 # NWU Tech Trends Benefit Realisation Power BI Report
 
-## Overview
-This Power BI report visualizes the benefits realized from NWU Tech Trends' projects and clients. The report focuses on key metrics such as time saved per client and project, along with a breakdown of project and client monitoring. The report allows stakeholders to explore the data interactively by filtering and drilling through to specific insights.
+## Project Overview
+This project focuses on the creation of a Power BI report to visualize the benefits realized by NWU Tech Trends from its various projects and clients. The report includes interactive visuals and analysis features that allow stakeholders to monitor key metrics such as time saved, project distribution, and client performance. It incorporates advanced AI features for deeper insights and enables easy filtering and drill-through capabilities.
 
 ## Report Pages
 
 ### 1. High-Level Metrics
-- **Total Projects**: Shows the total number of projects.
-- **Total Clients**: Displays the total number of clients.
-- **Total Savings per Client**: Bar chart showing total savings for each client.
-- **Project Distribution by Client**: Donut chart showing project distribution across clients.
+The **High-Level Metrics** page provides an overview of the most important data points relevant to NWU Tech Trends’ projects and clients.
+
+- **Total Projects**: Shows the total number of active projects across all clients.
+- **Total Clients**: Displays the total number of clients served by NWU Tech Trends.
+- **Total Savings per Client**: Bar chart visualizing the total savings accumulated by each client.
+- **Project Distribution by Client**: Donut chart showing the distribution of projects among different clients.
+
 
 ### 2. Project Monitoring
-- **Project Table**: Lists all projects with their client, start date, end date, and time saved.
-- **Time Saved per Project**: Bar chart showing total time saved for each project.
-- **Date Filter**: A slicer to filter projects by start or end date.
+The **Project Monitoring** page provides detailed insights into each project, including time saved and savings.
+
+- **Project Table**: Lists all projects along with the client name, start date, end date, and time saved.
+- **Time Saved per Project**: Bar chart showing the total time saved for each project.
+- **Date Filter**: A slicer to filter projects based on their start or end date.
+- **Decomposition Tree**: An AI feature that breaks down the total savings by project, client, and other factors.
 
 ### 3. Client Monitoring
-- **Total Savings per Client**: Bar chart showing total savings per client.
+The **Client Monitoring** page focuses on monitoring client performance and savings.
+
+- **Total Savings per Client**: Bar chart displaying the total savings for each client.
 - **Proportion of Savings by Client**: Pie chart showing the proportion of savings for each client.
-- **Savings per Client Over Time**: Line chart showing how savings have accumulated over time for each client.
-- **Client Filter**: A slicer that filters the report by specific clients.
+- **Savings per Client Over Time**: Line chart showing the progression of savings over time for each client.
+- **Client Filter**: A slicer that allows users to filter by specific clients.
+- **Key Influencers**: An AI-driven visual identifying factors that influence client savings the most.
 
 ## Usage Instructions
 
-1. **Navigating the Report**:
-   - Use the tabs at the bottom of the report to switch between **High-Level Metrics**, **Project Monitoring**, and **Client Monitoring** pages.
-   - Click on **slicers** to filter the visuals by client, project, or date range.
-   - Hover over visuals to see additional details and tooltips.
+### Navigating the Report
+- Use the **tabs** at the bottom of the report to switch between **High-Level Metrics**, **Project Monitoring**, and **Client Monitoring** pages.
+- **Slicers** (filters) are available on each page to refine the data by client, date range, and project type.
+- Hover over visuals to see additional details and **tooltips** providing further context.
 
-2. **Interactive Filters**:
-   - The **slicers** on the right-hand side allow you to filter the entire report by specific clients or date ranges.
-   - You can click on any data point (e.g., a specific client in the bar chart) to filter all other visuals to reflect that data point.
+### Drill-Through Functionality
+- You can right-click on any visual (such as a specific project or client) to **Drill Through** into more detailed insights about that data point. 
+- This feature allows for deeper analysis of projects and clients by navigating to dedicated pages.
 
-3. **Drill-Through Functionality**:
-   - Right-click on a visual (such as a specific project or client) to **Drill Through** into more detailed pages if available.
+### Filters and Interactions
+- Use the slicers provided on the right-hand side to filter the data by:
+  - **Client Name**
+  - **Project Type**
+  - **Date Range**
+- Interacting with one visual will automatically update the others to reflect the filtered data, ensuring cohesive analysis across the entire report.
 
-4. **Refreshing the Data**:
-   - The report is connected to the original dataset, and any changes made to the data source will automatically be reflected in Power BI.
+### Data Source
+- The data used for this report is sourced from an Excel file provided by NWU Tech Trends, containing information on projects, clients, time saved, and savings.
+
+## Calculations and Measures
+
+- **Project Duration**: A calculated column that computes the duration of each project in days using the `DATEDIFF` function.
+- **Total Savings**: A key measure that calculates the total savings across all projects using the `SUM` function on the `Savings` column.
+
+## AI Features
+This report leverages Power BI’s built-in AI features for deeper insights:
+
+1. **Key Influencers** (Client Monitoring page): Identifies factors that influence client savings.
+2. **Decomposition Tree** (Project Monitoring page): Breaks down savings hierarchically by project, client, and project type.
+
+## How to Refresh Data
+- This report is connected to an Excel data source. If the data source is updated, simply refresh the report to reflect the latest data.
+- In Power BI Desktop, go to **Home > Refresh** to refresh the data.
+- In Power BI Service, the report will automatically update if it is connected to a live data source.
+
+## Publishing and Sharing the Report
+- The report has been published to Power BI Service. It can be accessed through the following link: [Power BI Report Link](#).
+- Stakeholders can interact with the report online, filtering and drilling through as needed.
+- For sharing, ensure that the report is shared with stakeholders who have access to Power BI Service.
 
 ## Reference List
-Here is a list of resources used during the project for Power BI setup, data visualization, and report creation:
+The following resources were used in the development of this Power BI report:
 
 1. Chacon, S. & Straub, B., 2014. *Pro Git*. 2nd ed. Apress.
 2. Esposito, D., 2021. *Modern Web Development with ASP.NET Core 5*. 1st ed. Packt Publishing.
@@ -61,4 +95,4 @@ Here is a list of resources used during the project for Power BI setup, data vis
 17. Yochay, I., 2020. *Testing ASP.NET Core Applications*. Available at: https://docs.microsoft.com/en-us/aspnet/core/test/.
 
 ## Contact Information
-For any questions or issues regarding the report, please contact [Lwazi Nhlapo] at [lwazijayr@gmail.com].
+For any questions or feedback regarding this Power BI report, please contact [Lwazi Nhlapo] at [lwazijayr@gmail.com].
