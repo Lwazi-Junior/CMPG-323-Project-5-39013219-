@@ -11,7 +11,7 @@ The **High-Level Metrics** page provides an overview of the most important data 
 - **Total Projects**: Shows the total number of active projects across all clients.
 - **Total Clients**: Displays the total number of clients served by NWU Tech Trends.
 - **Total Savings per Client**: Bar chart visualizing the total savings accumulated by each client.
-- **Project Distribution by Client**: Donut chart showing the distribution of projects among different clients.
+- **Total Client per Technologies**: Donut chart showing the total of clients among different technologies.
 
 
 ### 2. Project Monitoring
@@ -30,6 +30,8 @@ The **Client Monitoring** page focuses on monitoring client performance and savi
 - **Savings per Client Over Time**: Line chart showing the progression of savings over time for each client.
 - **Client Filter**: A slicer that allows users to filter by specific clients.
 - **Key Influencers**: An AI-driven visual identifying factors that influence client savings the most.
+- **Smart Narratives**: An AI feature that generates text-based insights about client performance and savings.
+
 
 ## Usage Instructions
 
@@ -69,7 +71,7 @@ This report leverages Power BI’s built-in AI features for deeper insights:
 - In Power BI Service, the report will automatically update if it is connected to a live data source.
 
 ## Publishing and Sharing the Report
-- The report has been published to Power BI Service. It can be accessed through the following link: [Power BI Report Link](#).
+- The report has been published to Power BI Service. It can be accessed through the following link: [https://app.powerbi.com/groups/me/reports/47660190-e65f-4423-a50a-ac40596a9aff/2c10e0b557e8a362091d?experience=power-bi](#).
 - Stakeholders can interact with the report online, filtering and drilling through as needed.
 - For sharing, ensure that the report is shared with stakeholders who have access to Power BI Service.
 
